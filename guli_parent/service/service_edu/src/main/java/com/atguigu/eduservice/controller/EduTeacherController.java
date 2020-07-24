@@ -5,7 +5,10 @@ import com.atguigu.commonutils.R;
 import com.atguigu.eduservice.entity.EduTeacher;
 import com.atguigu.eduservice.entity.vo.TeacherQuery;
 import com.atguigu.eduservice.service.EduTeacherService;
+<<<<<<< HEAD
 import com.atguigu.servicebase.exceptionhandler.GuliException;
+=======
+>>>>>>> edcf48c36b644807e6857cfcd9f39068ee7b1f46
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
@@ -15,7 +18,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+<<<<<<< HEAD
 import java.util.List;
+=======
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+>>>>>>> edcf48c36b644807e6857cfcd9f39068ee7b1f46
 
 /**
  * <p>
@@ -67,6 +76,7 @@ public class EduTeacherController {
         //创建page对象
         Page<EduTeacher> pageTeacher = new Page<>(current,limit);
 
+<<<<<<< HEAD
         try {
             int i = 10/0;
         }catch(Exception e) {
@@ -74,6 +84,9 @@ public class EduTeacherController {
             throw new GuliException(20001,"执行了自定义异常处理....");
         }
 
+=======
+        int i = 10/0;
+>>>>>>> edcf48c36b644807e6857cfcd9f39068ee7b1f46
 
         //调用方法实现分页
         //调用方法时候，底层封装，把分页所有数据封装到pageTeacher对象里面
